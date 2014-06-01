@@ -1,0 +1,9 @@
+# Site settings
+title: Sn0rt's
+email: Sn0rt@abc.shop.edu.cn
+description: 一切有为法，如梦幻泡影，如露亦如电，应作如是观
+url: "http://linux323.tk"
+github_username: Sn0rt
+
+# Build settings
+markdown: kramdown

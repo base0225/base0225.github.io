@@ -12,7 +12,6 @@ categories:
 
 目标：完成一个Freebsd在vbox的安装，可以使用vbox的additions的功能。
 
-[![Freebsd](http://linux323.tk/wp-content/uploads/2014/08/Freebsd.png)](http://linux323.tk/wp-content/uploads/2014/08/Freebsd.png)
 
 1：在vbox中安装Freebsd。
 

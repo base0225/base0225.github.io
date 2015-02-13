@@ -88,4 +88,4 @@ categories:
 
 **Reference:**
 
-https://wiki.freebsdchina.org/software/v/virtualbox-additions
+[https://wiki.freebsdchina.org/software/v/virtualbox-additions](https://wiki.freebsdchina.org/software/v/virtualbox-additions)

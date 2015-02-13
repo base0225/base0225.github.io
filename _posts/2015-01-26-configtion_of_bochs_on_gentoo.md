@@ -3,7 +3,7 @@ author: wangguohao
 comments: true
 date: 2015-02-26
 layout: post
-title: Configtion of bochs on gentoo
+title: The configtion of bochs on gentoo
 categories: blog
 ---
 

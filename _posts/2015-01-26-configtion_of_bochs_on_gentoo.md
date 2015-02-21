@@ -4,9 +4,7 @@ comments: true
 date: 2015-02-26
 layout: post
 title: The configtion of bochs on gentoo
-=======
 title: Configtion of bochs on gentoo
-categories: blog
 ---
 
 在gentoo下面安装bochs适合use设置需要注意，debugger 和 dbg 不能并存， dbg这个use是是远程调试内核的设置代码桩必须的。

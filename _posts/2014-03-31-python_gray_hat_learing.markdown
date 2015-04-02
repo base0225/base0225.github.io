@@ -23,8 +23,7 @@ categories:
 
 你拿到脚本发现运行时报错，imm不提供这个方法，其实手册写的就是有问题，去看源码吧，在安装目录下面ref可以看到源码的，其实是大小写错的了（吐槽了一下，中文的书 代码不是等宽毫无美感）。
 
-**4：hooks function
-**
+**4：hooks function**
 
 钩子挺形象的，soft hooks， hard hooks，在imm里面有很多方法可以用，发挥想象，有待挖掘。
 
@@ -34,7 +33,7 @@ MS无量，带有清除DEP（NtSetInformationProcess）的函数，哈哈 被逆
 
 还有msf配合的用就是很方便，此中乐趣一起挖掘吧（猥琐流），举个栗子，这样就可以
 
-    
+
     # msfpayload windows/meterpreter/bind_tcp RHOST=192.168.1.123 LPORT=4444 N
 
 
@@ -49,5 +48,3 @@ MS无量，带有清除DEP（NtSetInformationProcess）的函数，哈哈 被逆
 我好嫩啊，我要回去继续学习，继续学习基础知识。
 
 还有一点，最后一个章节距离好像还是远，而且fuzzer需求还不是很大，好像还有一个pyEum的仿真平台留待日后学习。
-
-

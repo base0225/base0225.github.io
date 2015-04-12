@@ -40,7 +40,7 @@ shellcode由msf生成很方便，此中乐趣一起挖掘吧，举个栗子，�
     # msfpayload windows/meterpreter/bind_tcp RHOST=192.168.1.123 LPORT=4444 N
 
 
-还有meterpreter绝对是个好东西！不用可惜了
+还有meterpreter绝对是个好东西！傻瓜化shellcode生成。
 
 6：Fuzzing windows Drivers
 
@@ -48,5 +48,5 @@ shellcode由msf生成很方便，此中乐趣一起挖掘吧，举个栗子，�
 
 7：小结
 
-最后一段，把IDA里面的工具函数导出的idapython项目，是在google硬盘里面提供分发，google code的download页面比较老，IDA可以在吾爱破解的爱盘里面的下载到，测试成功。
+最后一段，把IDA里面的工具函数导出的idapython项目，是在[google driver](https://drive.google.com/folderview?id=0Byt2jQlHiAPoenZaNEtteGxyMTQ&usp=sharing)里面提供分发，google code的download页面比较老.
 这个书利用debugger为起始,让我对用python在windows平台进行逆向工程有了非常好的开始，不过里面的基本知识保质还可以，但是实验自己做起来就非常麻烦了。某些框架各种奇怪的依赖，而且还要新鲜编译，真是让人醉啊。

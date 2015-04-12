@@ -14,12 +14,12 @@ title: python灰帽子学习
 **2:环境搭建**
 
 在[这里](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pydbg)可以下载到pydbg，内建pydasm。
+还可以在[这里](https://github.com/OpenRCE/paimei)安装个框架,自带很多依赖，在后面章节从pydbg里面导入untils就可以成功的，如果你直接安装pydbg根本就没有这个文件，还有libbasm这个框架，也在里面,安装就是clone 回来， python steup install 就ok了。
 
-还有一些脚本import utils，第一次出现是在，access_violation_handler.py脚本中，但是导入失败了，其实了这个utils是pydbgi框架里面的一个工具集合，你可以在那里下载到。如果运行失败把C:\Python27\Lib\site-packages 下面的pydbg目录删除了，重新安装pydbg文件，好像是绕过了pydasm的版本问题。
 
 **3：immunity debugger问题**
 
-你拿到脚本发现运行时报错，imm不提供这个方法，其实手册写的就是有问题，去看源码吧，在安装目录下面ref可以看到源码的，其实是大小写错的了（吐槽了一下，中文的书 代码不是等宽毫无美感）。
+你拿到脚本发现运行时报错，immlib不提供这个方法，其实是书的问题，在安装目录下面ref可以看到文档，大小写错的了。
 
 **4：hooks function**
 
@@ -48,4 +48,5 @@ shellcode由msf生成很方便，此中乐趣一起挖掘吧，举个栗子，�
 
 7：小结
 
+最后一段，把IDA里面的工具函数导出的idapython项目，是在google硬盘里面提供分发，google code的download页面比较老，IDA可以在吾爱破解的爱盘里面的下载到，测试成功。
 这个书利用debugger为起始,让我对用python在windows平台进行逆向工程有了非常好的开始，不过里面的基本知识保质还可以，但是实验自己做起来就非常麻烦了。某些框架各种奇怪的依赖，而且还要新鲜编译，真是让人醉啊。

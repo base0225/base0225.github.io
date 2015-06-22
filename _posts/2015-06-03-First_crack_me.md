@@ -1,6 +1,7 @@
 ﻿---
 author: Sn0rt
 date: 2015-06-21 20:59:21
+layout: post
 title: the first crack me
 ---
 

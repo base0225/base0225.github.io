@@ -4,9 +4,6 @@ comments: true
 date: 2014-04-13 14:49:07+00:00
 layout: post
 title: 讀現代作業系統e3
-wordpress_id: 171
-categories:
-- 计算机
 ---
 
 一：線程與進程

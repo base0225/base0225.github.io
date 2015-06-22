@@ -1,8 +1,8 @@
-﻿---
+---
 author: Sn0rt
 date: 2015-06-21 20:59:21
 layout: post
-title: the first crack me
+title: 我的第一个crackme
 ---
 
 之前在看0day安全,准备学一点binary安全的知识.

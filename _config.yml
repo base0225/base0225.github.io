@@ -1,9 +1,16 @@
-# Site settings
-title: Sn0rt's
+markdown: rdiscount
+permalink: /:title/
+url: http://linux323.tk
+name: Sn0rt's Blog
+author: Sn0rt
+qq: 1175460346
 email: Sn0rt@abc.shop.edu.cn
-description: 一切有为法，如梦幻泡影，如露亦如电，应作如是观
-url: "http://linux323.tk"
-github_username: Sn0rt
-
-# Build settings
-markdown: kramdown
+duoshuo: Dante
+beian: 
+cnzz: 
+weibo: 
+github: Sn0rt
+pygments: true
+safe: true
+paginate: 20
+about: " 一切有为法，如梦幻泡影，如露亦如电，应作如是观"

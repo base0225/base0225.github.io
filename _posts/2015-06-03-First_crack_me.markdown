@@ -12,8 +12,7 @@ title: 我的第一个crackme
 需要用到的工具IDA,OD,还有一个算地址偏移的计算器,和需要被crack的对象.
 
 ```c
-
-    #include <stdio.h>
+#include <stdio.h>
 #define PASSWORD "1234567"
 int verify_password (char *password)
 {
@@ -61,6 +60,6 @@ jne SHORT crack_me.offset
 ```
 
 利用地址偏移计算机进行计算,内存VA对应的机器指令对用文件在磁盘上的头部的偏移.
-文件偏移地址 = 虚拟内存地址(VA) - 装载基址(Image Base) - 节偏移 
+文件偏移地址 = 虚拟内存地址(VA) - 装载基址(Image Base) - 节偏移
 其中exe文件的装载基址0x00400000,dll文件的是0x10000000,这些定义在windows系统编译过程中.
 节偏移需要pe工具看,还是用工具计算省心.

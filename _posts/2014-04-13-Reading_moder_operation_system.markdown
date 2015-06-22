@@ -3,7 +3,6 @@ author: wangguohao
 comments: true
 date: 2014-04-13 14:49:07+00:00
 layout: post
-slug: '%e8%ae%80%e7%8f%be%e4%bb%a3%e4%bd%9c%e6%a5%ad%e7%b3%bb%e7%b5%b1e3'
 title: 讀現代作業系統e3
 wordpress_id: 171
 categories:

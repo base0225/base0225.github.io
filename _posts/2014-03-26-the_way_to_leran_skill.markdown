@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 庖丁解牛
-category: blog
-description: 技能学习之道
+category: 生活
+tag: 道
 ---
 
 技能学习当如此：

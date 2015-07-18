@@ -3,11 +3,13 @@ author: Sn0rt
 date: 2015-06-21 20:59:21
 layout: post
 title: 我的第一个crackme
+tag: binary
+category: 安全
 ---
 
 之前在看0day安全,准备学一点binary安全的知识.
 
-#0x0001
+#0x01
 
 需要用到的工具IDA,OD,还有一个算地址偏移的计算器,和需要被crack的对象.
 
@@ -43,11 +45,11 @@ main()
 }
 ```
 
-#0x0002
+#0x02
 
 IDA可以帮助我们静态分析代码,OD动态分析,地址偏移计算机可以帮助我们找内存中的指令在文件中的哪个位置.
 
-#0x0003
+#0x03
 
 ```asm
 74 0f   JE SHORT crack_me.offset

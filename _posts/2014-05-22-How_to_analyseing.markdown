@@ -3,11 +3,8 @@ author: wangguohao
 comments: true
 date: 2014-05-22 09:52:14+00:00
 layout: post
-slug: '%e8%a7%a3%e5%86%b3%e9%97%ae%e9%a2%98%e7%9a%84%e8%bf%87%e7%a8%8b'
 title: 分析问题的方法
-wordpress_id: 225
-categories:
-- 扯淡
+categories: 生活
 ---
 
 ## 引子：“

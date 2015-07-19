@@ -12,7 +12,6 @@ body{font-size:16px;word-spacing:1px;
 margin-right:auto;
 	font-family:"Droid Sans Mono", "WenQuanYi Zen Hei Mono", "Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;color:#000000;background-color:#EDE298;}
 *{padding:0;margin: 0;border:none;outline:none;}
-a{color:black; text-decoration:none;}
 a:hover{color:#333333;text-decoration:underline;}
 hr{margin:.7em 0;border-top:1px dashed #d0d0d0;border-bottom:1px dashed #f9f9f9;}
 p{padding:.5em 0;}
@@ -30,7 +29,7 @@ blockquote p{margin:0;padding:.5em 0;}
 .content img{max-width:640px;display:block;margin:4px auto;-webkit-box-shadow:#999 1px 1px 4px;-moz-box-shadow:#999 1px 1px 4px;box-shadow:#999 1px 1px 4px;}
 
 #tag_cloud{margin-bottom: 1em;}
-#tag_cloud a:hover{color:#333333 !important;text-decoration:none;}
+#tag_cloud a:hover{color:#222!important;text-decoration:none;}
 
 .listing-item,.listing-seperator{list-style-type:none;}
 

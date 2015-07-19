@@ -13,7 +13,8 @@ category: 安全
 
 需要用到的工具IDA,OD,还有一个算地址偏移的计算器,和需要被crack的对象.
 
-```c
+{% highlight c%}
+
 #include <stdio.h>
 #define PASSWORD "1234567"
 int verify_password (char *password)
@@ -43,7 +44,7 @@ main()
 		}
 	}
 }
-```
+{% endhighlight %}
 
 #0x02
 

@@ -12,6 +12,8 @@ weibo:
 github: Sn0rt
 highlighter: pygments
 markdown: redcarpet
+redcarpet:
+extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
 safe: true
 paginate: 20
 about: " 一切有为法，如梦幻泡影，如露亦如电，应作如是观"

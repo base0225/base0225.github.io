@@ -13,7 +13,7 @@ sulley 各种依赖可以在[here](https://github.com/reider-roque/pydbg-pydasm-
 
 先安装vs2010,然后设置环境变量，通过这条指令 
 
-```
+```c
 SET VS90COMNTOOLS=%VS100COMNTOOLS%.
 ```
 

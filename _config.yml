@@ -10,7 +10,8 @@ beian:
 cnzz: 
 weibo: 
 github: Sn0rt
-pygments: true
+highlighter: pygments
+markdown: redcarpet
 safe: true
 paginate: 20
 about: " 一切有为法，如梦幻泡影，如露亦如电，应作如是观"

@@ -122,11 +122,9 @@ text-decoration: none;
 }
 
 .paginator .current-page {
-color: white;
-background: #ff0000;
+color: black;
 }
 
 .paginator a:hover{
-color: white;
-background: #83BF73;
+color: black;
 }

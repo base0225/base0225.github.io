@@ -5,15 +5,25 @@ name: Sn0rt's Blog
 author: Sn0rt
 qq: 1175460346
 email: Sn0rt@abc.shop.edu.cn
-duoshuo: Dante
 beian: 
 cnzz: 
 weibo: 
 github: Sn0rt
 highlighter: pygments
-markdown: redcarpet
+markdown_ext:  markdown,mkd,mkdn,md
+textile_ext:   textile
 redcarpet:
-extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]
+  extensions:
+    - fenced_code_blocks
+    - no_intra_emphasis
+    - strikethrough
+    - no_intra_emphasis
+    - autolink
+    - tables
+    - with_toc_data
+
+kramdown:
+   input:            GFM
 safe: true
 paginate: 20
 about: " 一切有为法，如梦幻泡影，如露亦如电，应作如是观"

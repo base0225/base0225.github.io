@@ -9,6 +9,7 @@ beian:
 cnzz: 
 weibo: 
 github: Sn0rt
+duoshuo: Dante
 highlighter: pygments
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile

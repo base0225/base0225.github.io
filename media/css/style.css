@@ -34,7 +34,8 @@ blockquote p{margin:0;padding:.5em 0;}
 .listing-item,.listing-seperator{list-style-type:none;}
 
 .listing-item a{
-	padding:.2em 1em;
+  padding:.2em 1em;
+  color: black;
 }
 
 .listing-item time{color:#999999;}

@@ -3,11 +3,8 @@ author: wangguohao
 comments: true
 date: 2014-10-07 14:35:58+00:00
 layout: post
-slug: '%e3%80%8a%e7%8e%8b%e4%ba%8c%e7%9a%84%e7%bb%8f%e6%b5%8e%e5%ad%a6%e6%95%85%e4%ba%8b%e3%80%8b%e8%af%bb%e5%90%8e%e6%84%9f'
 title: 《王二的经济学故事》读后感
-wordpress_id: 514
-categories:
-- 读书
+categories: 读书
 ---
 
 国庆在宿舍用了半天时间就读完这本书，很畅快。

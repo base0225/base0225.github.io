@@ -56,7 +56,6 @@ font-family:Galdeano,"Droid sans Mono","WenQuanYi Zen Hei Mono", "Microsoft YaHe
 font-size:17px;
 line-height:30px;
 color:black;
-background-color:#F0E4B1;
 margin:0;
 }
 
@@ -238,14 +237,13 @@ cite {
 font-style:normal;
 }
 
-code,pre {
+pre {
 font-family:Monaco,Menlo,"Courier New",monospace;
 font-size:12px;
 color:#333;
 -webkit-border-radius:3px;
 -moz-border-radius:3px;
 border-radius:3px;
-padding:0 3px 2px;
 }
 
 code {
@@ -266,15 +264,14 @@ border:1px solid rgba(0,0,0,0.15);
 border-radius:4px;
 white-space:pre-wrap;
 word-break:break-all;
-margin:0 0 15px;
-padding:14.5px;
+padding:0.5px;
 }
 
 pre.prettyprint {
 margin-bottom:30px;
 background-color:#f7f7f9;
 border:1px solid #e1e1e8;
-padding:8px;
+padding:5px;
 }
 
 pre code {

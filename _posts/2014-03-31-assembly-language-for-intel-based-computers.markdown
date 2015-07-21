@@ -1,10 +1,10 @@
 ---
 author: wangguohao
 comments: true
-date: 2014-03-31 11:58:51+00:00
+date: 2014-03-31 
 layout: post
 title: Assembly Language for Intel-Based Computers 开发环境搭建
-categories:
+categories: program
 ---
 
 几经弯路，终有找到了简单易上手的方法了，利用masm32 和 vs 210 配合的用。

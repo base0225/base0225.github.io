@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Install the sulley framework
-category: 安全
-tag: binary
+category: program
+tag: fuzzer
 ---
 
 sulley是一个过去比较出名的fuzz框架，但是好像已经停止支持了，我第一接触是在python灰帽子那本书里面，但是安装这个框架过程真的是很麻烦！

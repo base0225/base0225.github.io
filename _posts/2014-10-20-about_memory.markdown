@@ -1,13 +1,10 @@
 ---
 author: wangguohao
-comments: true
-date: 2014-10-20 14:51:01+00:00
+date: 2014-10-20
 layout: post
-slug: '%e8%ae%b0%e5%bf%86%e7%9a%84%e8%bf%87%e7%a8%8b'
+tag: 道
 title: 记忆的过程
-wordpress_id: 536
-categories:
-- 生活
+categories: 生活
 ---
 
 今天一早看了TED的演讲，发现了一个让我感兴趣的话题——记忆的过程。

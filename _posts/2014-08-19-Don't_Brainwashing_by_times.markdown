@@ -3,11 +3,8 @@ author: wangguohao
 comments: true
 date: 2014-08-19 12:38:13+00:00
 layout: post
-slug: '%e4%b8%8d%e8%a6%81%e8%a2%ab%e6%97%b6%e4%bb%a3%e6%b4%97%e8%84%91'
 title: 不要被时代洗脑
-wordpress_id: 466
-categories:
-- 生活
+categories: 生活
 ---
 
 <blockquote>伟人的伟大是自己的，弊端是时代带给他的。</blockquote>

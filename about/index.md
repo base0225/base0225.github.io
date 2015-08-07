@@ -1,26 +1,21 @@
 ---
-title: 关于
+title: 关于我
 layout: page
 comments: no
 ---
 
-{{ site.about }}
+年幼天真,贪玩多动,荒废了诸多光阴.</br>
+但孩提之时就闻计算机之精妙,欲学之,高考后如愿以偿.</br>
+虽所猎甚广,但精之甚少,唯独对Linux情有独中,不曾停止对其学习与专研,如今已然四年矣,只觉门道就在前方.</br>
+期间又觉安全技术巧技浸淫,敢于突破,别有风情,遂与之结缘,每当投入学习其中一二精妙之处,竟不觉时间飞逝.</br>
 
-----
+光阴如白驹过隙转瞬即逝,特做此博客一来记录学习点滴,如有错误还请见谅.二来结识通道中人,独学而无友,则孤陋而寡闻.</br>
+
+---
 
 ###联系方式：
 
-{% if site.qq %}
-ＱＱ：[{{ site.qq }}](tencent://message/?uin={{ site.qq }})
-{% endif %}
-网站：[{{ site.name }}]({{ site.url }})
-
+网站：[{{ site.name }}]({{ site.url }})</br>
 邮箱：[{{ site.email }}](mailto:{{ site.email }})
 
-GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github }})
-
-----
-
-{% if site.weibo %}
-[![新浪微博](http://service.t.sina.com.cn/widget/qmd/{{ site.weibo }}/f78fbcd2/1.png)](http://weibo.com/u/{{ site.weibo }})
-{% endif %}
+---

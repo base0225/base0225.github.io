@@ -5,9 +5,6 @@ name: Sn0rt's Blog
 author: Sn0rt
 qq: 1175460346
 email: Sn0rt@abc.shop.edu.cn
-beian: 
-cnzz: 
-weibo: 
 github: Sn0rt
 duoshuo: Dante
 highlighter: pygments
@@ -27,4 +24,3 @@ kramdown:
    input:            GFM
 safe: true
 paginate: 20
-about: " 一切有为法，如梦幻泡影，如露亦如电，应作如是观"

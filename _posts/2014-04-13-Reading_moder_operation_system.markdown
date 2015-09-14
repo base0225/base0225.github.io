@@ -3,7 +3,7 @@ author: wangguohao
 comments: true
 date: 2014-04-13 14:49:07+00:00
 layout: post
-title: 讀現代作業系統e3
+title: 现代操作系统初窥
 ---
 
 一：線程與進程

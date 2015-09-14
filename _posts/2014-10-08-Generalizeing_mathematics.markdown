@@ -3,9 +3,7 @@ author: wangguohao
 comments: true
 date: 2014-10-08 01:24:12+00:00
 layout: post
-slug: '%e6%95%b0%e5%ad%a6%e7%9f%a5%e8%af%86%e6%a2%b3%e7%90%86'
 title: 数学知识梳理
-wordpress_id: 520
 categories:
 - 生活
 ---

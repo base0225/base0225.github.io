@@ -8,7 +8,7 @@ title: GSM嗅探
 categories:
 ---
 
-####0x00 道具
+###0x00 道具
 
 一个Linux系统，摩托罗拉c118，T型minusb数据线，Motorola c118/c123 数据连接线，FT232 USB转串口TTL，Motorola C118/c123 滤波器套件(这个需要焊接技能，换滤波器可以捕获uplink信号)，感谢曾哥赞助这些玩具，可以到淘宝店一次买全。
 

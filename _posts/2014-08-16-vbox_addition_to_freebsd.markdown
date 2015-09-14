@@ -3,7 +3,6 @@ author: wangguohao
 comments: true
 date: 2014-08-16 01:41:30+00:00
 layout: post
-slug: vbox%e4%b8%adfreebsd%e7%9a%84%e5%a2%9e%e5%bc%ba
 title: Vbox中FreeBSD的增强
 wordpress_id: 461
 categories:

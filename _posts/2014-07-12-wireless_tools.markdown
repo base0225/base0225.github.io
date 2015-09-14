@@ -3,7 +3,6 @@ author: wangguohao
 comments: true
 date: 2014-07-12 13:40:32+00:00
 layout: post
-slug: '%e6%97%a0%e7%ba%bf%e7%bd%91%e7%bb%9c%e5%ae%89%e5%85%a8%e5%88%9d%e6%8e%a2'
 title: 无线网络安全工具初探
 wordpress_id: 362
 categories:

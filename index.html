@@ -1,56 +1,218 @@
----
-title: 首页
-layout: page
----
+<!DOCTYPE HTML>
+<!--
+	Astral 1.0 
+-->
+<html>
+	<head>
+		<title>朱佳的简历</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet" />
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="css/5grid/init.js?use=mobile,desktop"></script>
+		<script src="js/jquery.formerize-1.1.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/5grid/core.css" />
+			<link rel="stylesheet" href="css/5grid/core-desktop.css" />
+			<link rel="stylesheet" href="css/5grid/core-1200px.css" />
+			<link rel="stylesheet" href="css/5grid/core-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+			<link rel="stylesheet" href="css/noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
 
-<ul class="listing">
-{% for post in paginator.posts %}
-  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
-  {% if year != y %}
-    {% assign year = y %}
-    <li class="listing-seperator">{{ y }}</li>
-  {% endif %}
-  <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    {% if site.truncate %}
-    <p>{{ post.content | strip_html | truncate: site.truncate }}</p>
-    {% endif%}
-  </li>
-{% endfor %}
-</ul>
+		<!-- Wrapper-->
+			<div id="wrapper">
+				
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon icon-user active"><span>Me</span></a>
+						<a href="#work" class="icon icon-folder"><span>Work</span></a>
+						<a href="#email" class="icon icon-mail"><span>Email Me</span></a>
+						<!--<a href="#award" class="icon icon-twitter"><span>Award</span></a>-->
+					</nav>
 
-<div id="post-pagination" class="paginator">
+				<!-- Main -->
+					<div id="main">
+						
+						<!-- Me -->
+							<article id="me" class="panel">
+								<header>
+                                    <p>
 
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-    <a href="/"><前页</a>
-    {% else %}
-    <a href="/page{{paginator.previous_page}}">&lt;前页</a>
-    {% endif %}
-  {% else %}
-    <span class="previous disabled">&lt;前页</span>
-  {% endif %}
+                                    </p>
+									<h2>自我介绍</h2>
+									<span class="byline">
+                                        <img src="images/自我介绍.png">
 
-      {% if paginator.page == 1 %}
-      <span class="current-page">1</span>
-      {% else %}
-      <a href="/">1</a>
-      {% endif %}
+                                    </span>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="jumplink arrow icon icon-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
 
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-      <span class="current-page">{{count}}</span>
-      {% else %}
-      <a href="/page{{count}}">{{count}}</a>
-      {% endif %}
-    {% endfor %}
+						<!-- Work --> 
+							<article id="work" class="panel">
+								<header>
+									<h2>技能</h2>
+								</header>
+								<p>
+                                    <span>
+                                        <image src = "images/技能.png"></image>
+                                    </span>
 
-  {% if paginator.next_page %}
-    <a class="next" href="/page{{paginator.next_page}}">后页&gt;</a>
-  {% else %}
-    <span class="next disabled" >后页&gt;</span>
-  {% endif %}
-  (共{{ paginator.total_posts }}篇)
-</div>
+								</p>
+								<section class="5grid is-gallery">
+									<div class="row">
+										<div class="4u">
+											<a></a>
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/contact-login-form/8829734266026310" class="image image-full"><img src="images/2.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/wallpaper-pack/3755398966026313" class="image image-full"><img src="images/3.jpg" alt=""></a>-->
+										</div>
+									</div>
+									<div class="row">
+										<div class="4u">
+											<!--<a href="http://flypixel.com/44-shades-of-free-icons/8268508056006318" class="image image-full"><img src="images/4.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/flip-clock/3655053956026317" class="image image-full"><img src="images/5.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/dropdown/5290304620795313" class="image image-full"><img src="images/6.jpg" alt=""></a>-->
+										</div>
+									</div>
+									<div class="row">
+										<div class="4u">
+											<!--<a href="http://flypixel.com/pie-charts/1759361594616314" class="image image-full"><img src="images/7.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/sliding-selector-bar/7042935581006315" class="image image-full"><img src="images/8.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/dark-as-hell-ui/5418809286006313" class="image image-full"><img src="images/9.jpg" alt=""></a>-->
+										</div>
+									</div>
+									<div class="row">
+										<div class="4u">
+											<!--<a href="http://flypixel.com/cityscape/9803996277226316" class="image image-full"><img src="images/10.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/dropdown/8259263378026313" class="image image-full"><img src="images/11.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/wood-ui-kit/3574765984616310" class="image image-full"><img src="images/12.jpg" alt=""></a>-->
+										</div>
+									</div>
+									<div class="row">
+										<div class="4u">
+											<!--<a href="http://flypixel.com/upload-button/9737964647895311" class="image image-full"><img src="images/13.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/collapsible-menunavigation/5743165610406316" class="image image-full"><img src="images/14.jpg" alt=""></a>-->
+										</div>
+										<div class="4u">
+											<!--<a href="http://flypixel.com/3d-button/5506786525606318" class="image image-full"><img src="images/15.jpg" alt=""></a>-->
+										</div>
+									</div>
+								</section>
+							</article>
 
+						<!-- Email -->
+							<article id="email" class="panel">
+								<header>
+									<h2>联系我</h2>
+								</header>
+								<form action="#" method="post">
+									<div class="5grid">
+										<div class="row">
+											<div class="6u">
+												<input type="text" class="text" name="name" placeholder="朱佳" />
+											</div>
+											<div class="6u">
+												<input type="text" class="text" name="email" placeholder="736952542@qq.com/zhu_base0225@163.com" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" class="text" name="subject" placeholder="座右铭：天道酬勤"/>
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+                                                <p>非常希望为贵公司的发展起到添砖加瓦的作用，殷切期盼公司领导的回复。至此，祝愿贵公司事业蒸蒸日上!</p>
+												<!--<textarea name="message" placeholder="Message">-->
+                                                  <!--非常希望为贵公司的发展起到添砖加瓦的作用，殷切期盼公司领导的回复。至此，祝愿贵公司事业蒸蒸日上，越办越出色!-->
+
+												<!--</textarea>-->
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+
+												<!--<input type="submit" class="button" value="Send Message" />-->
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+                        <!--<article id="award" class="panel">-->
+                            <!--<header>-->
+                                <!--<h2>所获奖项&经历</h2>-->
+
+                                <!--<form action="#" method="post">-->
+                                    <!--<div class="row">-->
+                                        <!--<p>-->
+                                            <!--&lt;!&ndash;<h4> 获奖：</h4>&ndash;&gt;-->
+                                  <!--<br>-->
+                                        <!--<h3>在大学期间：</h3>-->
+
+                                            <!--<br>-->
+                                       <!--全国大学生数学建模大赛：全国一等奖（C题）-->
+                                            <!--<br>-->
+                                       <!--全国大学生职业技能大赛“神州数码杯”信息安全大赛：全国三等奖（网络攻防）-->
+                                         <!--<br>-->
+                                            <!--国家励志奖学金-->
+                                            <!--<br>-->
+                                       <!--三好学生、科技先进奖等-->
+                                            <!--<br>-->
+                                        <!--<br>-->
+                                  <!--<h3>参加工作：</h3>-->
+                                            <!--<br>-->
+                                       <!--获华为杯“名师高徒奖项”-->
+                                            <!--<br>-->
+                                       <!--获华为红区项目QQC圈奖-->
+                                  <!--<h4></h4>-->
+                                        <!--</p>-->
+                                    <!--</div>-->
+
+                                <!--</form>-->
+                            <!--</header>-->
+                        <!--</article>-->
+					</div>
+
+
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="links">
+							<li>&copy; base</li>
+							<!--<li>Images : <a href="#">fotogrph</a></li>-->
+							<!--<li>collect from: <a href="http://www.cssmoban.com/" title=""></a></li>-->
+						</ul>
+					</div>
+		
+			</div>
+
+	</body>
+</html>
